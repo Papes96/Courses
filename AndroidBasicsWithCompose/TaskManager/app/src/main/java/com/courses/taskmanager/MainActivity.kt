@@ -106,3 +106,38 @@ fun DefaultPreview() {
         )
     }
 }
+
+/* Solution Code https://github.com/google-developer-training/basic-android-kotlin-compose-training-practice-problems/blob/main/Unit%201/Pathway%203/TaskCompleted/app/src/main/java/com/example/taskcompleted/MainActivity.kt
+@Composable
+fun TaskCompletedScreen() {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .fillMaxHeight(),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
+    ) {
+        val image = painterResource(R.drawable.ic_task_completed)
+        Image(painter = image, contentDescription = null)
+        Text(
+            text = stringResource(R.string.all_task_completed),
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(top = 24.dp, bottom = 8.dp)
+        )
+        Text(
+            text = stringResource(R.string.nice_work),
+            fontSize = 16.sp
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun TaskCompletedPreview() {
+    TaskCompletedTheme {
+        Surface {
+            TaskCompletedScreen()
+        }
+    }
+}
+*/

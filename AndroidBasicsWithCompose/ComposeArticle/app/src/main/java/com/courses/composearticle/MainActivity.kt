@@ -105,3 +105,53 @@ fun DefaultPreview() {
         )
     }
 }
+
+/* Solution Code https://github.com/google-developer-training/basic-android-kotlin-compose-training-practice-problems/blob/main/Unit%201/Pathway%203/ComposeArticle/app/src/main/java/com/example/composearticle/MainActivity.kt
+@Composable
+fun ComposeArticleApp() {
+    ArticleCard(
+        title = stringResource(R.string.title_jetpack_compose_tutorial),
+        shortDescription = stringResource(R.string.compose_short_desc),
+        longDescription = stringResource(R.string.compose_long_desc),
+        imagePainter = painterResource(R.drawable.bg_compose_background)
+    )
+}
+
+@Composable
+private fun ArticleCard(
+    title: String,
+    shortDescription: String,
+    longDescription: String,
+    imagePainter: Painter,
+    modifier: Modifier = Modifier,
+) {
+    Column(modifier = modifier) {
+        Image(painter = imagePainter, contentDescription = null)
+        Text(
+            text = title,
+            fontSize = 24.sp,
+            modifier = Modifier.padding(16.dp)
+        )
+        Text(
+            text = shortDescription,
+            textAlign = TextAlign.Justify,
+            modifier = Modifier.padding(start = 16.dp, end = 16.dp)
+        )
+        Text(
+            text = longDescription,
+            textAlign = TextAlign.Justify,
+            modifier = Modifier.padding(16.dp)
+        )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun ComposeArticleAppPreview() {
+    ComposeArticleTheme {
+        Surface {
+            ComposeArticleApp()
+        }
+    }
+}
+*/
